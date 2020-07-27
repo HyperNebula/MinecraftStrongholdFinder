@@ -233,3 +233,8 @@ dmypy.json
 .pytype/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/MinecraftStrongholdFinder.iml
+.idea/misc.xml
+.idea/modules.xml
+*.xml
