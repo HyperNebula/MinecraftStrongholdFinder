@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="css/main.css">
+
+		<title>Overview</title>
+
+	</head>
+
+	<body>
+
+		<br><br>
+		
+		<div class="container p-4">
+			<div class="row">
+				<div class="col">
+
+					<center>
+						<h1>Stronghold Finder</h1>
+					</center>
+					
+				</div>
+			</div>
+
+			<div class="row mt-2">
+				<div class="col">
+					<center>
+						<p>Use this simple tool to easily find the coordinates of a stronghold using only 2 eyes of ender <br>
+						Record where you threw the pearl and where it stopped moving. Go ~100 blocks away perpendicular to the pearl and do it again</p>
+					</center>
+				</div>
+			</div>
+		</div>
+
+		<br><br>
+
+		<center>
+		<div class="container">
+			<form onsubmit="return false">
+				<div class="row">
+					<div class="col">
+						<h4>Pearl 1</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center mt-2">
+				  	<div class="col-auto">
+				    	<label for="inputXcoord1" class="col-form-label">1st Coordinate</label>
+				  	</div>
+				  	<div class="col-1">
+						<input type="number" id="inputXcoord1" class="form-control" placeholder="X" required>
+					</div>	 
+				  	<div class="col-1">
+				    	<input type="number" id="inputZcoord1" class="form-control" placeholder="Z" required>
+					</div>
+
+					<div class="col-auto">
+				    	<label for="inputXcoord2" class="col-form-label">2nd Coordinate</label>
+				  	</div>
+				  	<div class="col-1">
+						<input type="number" id="inputXcoord2" class="form-control" placeholder="X" required>
+					</div>	 
+				  	<div class="col-1">
+				    	<input type="number" id="inputZcoord2" class="form-control" placeholder="Z" required>
+					</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col">
+						<h4>Pearl 2</h4>
+					</div>
+				</div>
+				<div class="row justify-content-center mt-2">
+				  	<div class="col-auto">
+				    	<label for="inputXcoord1" class="col-form-label">1st Coordinate</label>
+				  	</div>
+				  	<div class="col-1">
+						<input type="number" id="inputXcoord3" class="form-control" placeholder="X" required>
+					</div>	 
+				  	<div class="col-1">
+				    	<input type="number" id="inputZcoord3" class="form-control" placeholder="Z" required>
+					</div>
+
+					<div class="col-auto">
+				    	<label for="inputXcoord2" class="col-form-label">2nd Coordinate</label>
+				  	</div>
+				  	<div class="col-1">
+						<input type="number" id="inputXcoord4" class="form-control" placeholder="X" required>
+					</div>	 
+				  	<div class="col-1">
+				    	<input type="number" id="inputZcoord4" class="form-control" placeholder="Z" required>
+					</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col">
+						<button type="submit" class="btn btn-primary" onclick="findStronghold()">Calculate</button>
+					</div>
+				</div>
+			</form>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-8" id="finalAlert">
+
+				</div>
+			</div>
+		</div>
+		<center>
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
