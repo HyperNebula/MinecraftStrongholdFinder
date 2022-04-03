@@ -21,5 +21,7 @@ function findStronghold() {
 	document.getElementById("finalAlert").innerHTML = 
 	`<div class="alert alert-success" role="alert">
 		The stronghold is likely around <strong>X: ` + EndX + `</strong> and <strong>Y: ` + EndY + `</strong>
-	</div>`
+	</div>`;
+
+	return false;
 }
